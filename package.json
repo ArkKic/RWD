@@ -1,0 +1,23 @@
+{
+  "name": "kodilla-rwd",
+  "version": "1.0.0",
+  "description": "kodilla rwd project",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "ArkKic",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}

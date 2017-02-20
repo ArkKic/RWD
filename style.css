@@ -1,0 +1,494 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.row:before, 
+.row:after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+
+header {
+  background-color: #313234;
+  height: auto;
+  background-color: rgba(0.0.0 0.5);
+}
+
+header > nav img {
+  padding: 10px 0;
+}
+
+header > nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header > nav ul > li > a {
+  line-height: 50px;
+  color: #fff;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+  background: #ccc;
+}
+
+.slogan {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.slogan > h1 {
+	float: right;
+	background-color: rgba(0.0.0 0.5);
+	max-width: 800px;
+  	color: white;
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	right: 0;
+  	margin: 0;
+  	text-transform: uppercase;
+  	text-shadow: 2px 2px black;
+  	font-size: 30px;
+}
+
+.hero {
+	width: 100%;
+	height: calc(100vh - 50px);
+	box-sizing: border-box;
+	background-size: cover;
+	overflow: hidden;
+  	background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640__340.jpg);
+}
+
+[class*="col-"] {
+    width: 100%;
+    padding: 12px; 
+    float: left;
+}
+
+h3 {
+  font-size: 22px;
+  text-align: center;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+section> .container {
+	margin: 50px auto;
+	text-align: center;
+	max-width: 400px;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons i.fa {
+    padding: 20px;
+    width: 110px;
+    background-color: #333534;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 60px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.icons:hover i.fa {
+    background-color: #00C7E8;
+    transition-duration: 0.3s;
+}
+
+.icons:hover h3 {
+    color: #00C7E8;
+    transition-duration: 0.3s;
+}
+
+section> .row container {
+	text-align: center;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.feature-text {
+	padding: 0 15% 30px;
+}
+
+.gallery .row {
+    height: 200px;
+}
+
+.gallery .image {
+    height: 100%;
+    background-position: center;
+    padding: 0;
+}
+
+[id*="image"] {
+	background-image: url(http://placehold.it/200x150);
+	
+}
+
+#image1, #image3 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/01/01/20/02/taiwan-1117008__340.jpg");
+    
+}
+
+#image2, #image8 {
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/08/15/13/mountain-1244132__340.jpg");
+    
+}
+
+#image4, #image6 {
+	background-image: url("https://cdn.pixabay.com/photo/2014/11/21/03/27/landscape-540122__340.jpg");
+
+}
+
+#image5, #image7 {
+	background-image: url("https://cdn.pixabay.com/photo/2016/09/19/22/46/hut-1681485__340.jpg");
+	
+}
+
+.mid-icons {
+	height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.image i {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 85px;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+
+.team {
+	width: 100%;
+	text-align: center;
+	display: block;
+	
+}
+
+.person { 
+    width: 150px;
+	height: 150px;
+    background: gray;
+    border-radius: 50%;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: white;
+	display: block;
+}
+
+.person:hover .overlay { 
+	visibility: visible;
+	background-image: url("https://cdn.pixabay.com/photo/2015/03/08/17/25/musician-664432__340.jpg");
+	width: 150px;
+	height: 150px;
+    border-radius: 50%;
+    margin: 30px 0 auto;
+    position: relative;
+	color: white;
+	display: block;
+}   
+
+.person:hover .overlay p {
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	display: block;
+	position: absolute;
+	margin: 0;
+	font-size: 20px;
+}
+
+.overlay p {
+	display: none;
+}
+
+.promo {
+  background: #333;
+  margin: 100px auto 0;
+}
+
+.promo-image {
+  background: url("https://s30.postimg.org/ji21jooe9/promo.jpg") 0/cover;
+  height: 300px;
+}
+
+.promo h2 {
+  color: #FFF;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.promo p {
+  color: #FFF;
+  padding: 10px 30px;
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.promo img {
+  background-attachment: fixed;
+}
+
+.info h3 {
+	font-family: 'Raleway', sans-serif; 
+	font-size: 45px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.data p {
+	font-family: 'Raleway', sans-serif; 
+	font-size: 14px;
+	font-weight: bold;
+	color: #05B5F0;
+	
+}
+
+.align-left {
+	text-align: left;
+}
+
+.contact {
+	background-color: #313332;
+	color: white;
+	max-width:: 1200px;
+	padding: 15px 30px;
+	font-size: 16px;
+	
+}
+
+.contact p, .contact h1 {
+	margin: 10px;
+	text-align: left;
+}
+
+.contact .col-3 > p {
+	font-weight: 800; 
+}
+
+.social-icons i.fa {
+	font-size: 1.2em;
+	width: 35px;
+	height: 35px;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 0;
+	background-color: #00C7E8;
+}
+
+footer {
+	color: #fff;
+	background-color: #252726;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+}
+
+footer p {
+	font-size: 10px;
+	color: white;
+}
+
+@media(max-width: 767px) {
+	/* For tablets: */
+    
+    header nav {
+        height: auto;
+        text-align: center;
+    }
+    
+    header nav ul {
+        float: none;
+    }
+    
+    header nav img {
+        max-height: 15vh;
+    }
+    
+    .photo {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    .nature {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+	
+	[id*="image"] {
+		background-size: cover;
+	}
+	
+    .overlay { 
+		visibility: visible;
+		background-image: url("https://cdn.pixabay.com/photo/2015/03/08/17/25/musician-664432__340.jpg");
+		width: 150px;
+		height: 150px;
+    	border-radius: 50%;
+    	margin: 30px 0 auto;
+    	position: relative;
+		color: white;
+		display: block;
+    }
+
+  .overlay p {
+    	top: 50%; 
+	    left: 50%; 
+    	transform: translate(-50%, -50%);
+    	display: block;
+    	position: absolute;
+    	margin: 0;
+    	font-size: 20px;
+  	}
+ 
+   icons i.fa {
+	    padding: 20px;
+	    width: 110px;
+	    background-color: #333534;
+	    color: #fff;
+	    border-radius: 15px;
+	    font-size: 60px;
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    visibility: visible;
+	    display: block;
+    
+	}
+	
+	.image i {
+		visibility: visible;
+	}
+
+ 	.mid-icons {
+		height: 100%;
+	    width: 100%;
+	    background-color: rgba(0, 0, 0, 0.0);
+	    visibility: visible;
+	    display: block;
+	}
+	
+}
+
+@media(min-width: 768px) {
+	/* For desktop: */
+	.col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .col-m-20 {width: 20%;}
+    .col-m-40 {width: 40%;}
+	
+	header nav {
+        height: auto;
+        text-align: center;
+    }
+    
+    header nav ul {
+        float: right;
+    }
+    
+    header nav ul li {
+        display: inline-block;
+    }
+    
+    header nav img {
+        max-height: 15vh;
+    }
+    
+	.hero {
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	
+	.promo {
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	
+    .person:hover .overlay { 
+		visibility: visible;
+		background-image: url("https://cdn.pixabay.com/photo/2015/03/08/17/25/musician-664432__340.jpg");
+		width: 150px;
+		height: 150px;
+	    border-radius: 50%;
+	    margin: 30px 0 auto;
+	    position: relative;
+		color: white;
+		display: block;
+	}
+	
+	.image:hover i.fa {
+	    transition: 0.4s;
+	    border-radius: 15%;
+	    visibility: visible;
+	}
+
+	.image:hover>.mid-icons {
+	    background-color: rgba(0, 0, 0, 0.7);
+	    transition: 0.4s;
+	}
+
+}
+	
